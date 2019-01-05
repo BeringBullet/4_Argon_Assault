@@ -155,9 +155,10 @@
     <Compile Include="Assets\Asset Packs\Standard Assets\Vehicles\Car\Scripts\SkidTrail.cs" />
     <Compile Include="Assets\Asset Packs\Standard Assets\Vehicles\Car\Scripts\Suspension.cs" />
     <Compile Include="Assets\Asset Packs\Standard Assets\Vehicles\Car\Scripts\WheelEffects.cs" />
+    <Compile Include="Assets\Scrips\CollisionHandler.cs" />
     <Compile Include="Assets\Scrips\MusicPlayer.cs" />
-    <Compile Include="Assets\Scrips\Player.cs" />
-    <Compile Include="Assets\Scrips\Splash.cs" />
+    <Compile Include="Assets\Scrips\PlayerController.cs" />
+    <Compile Include="Assets\Scrips\SceneLoader.cs" />
     <None Include="Assets\Asset Packs\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
     <None Include="Assets\Asset Packs\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />
     <None Include="Assets\Asset Packs\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
