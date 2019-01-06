@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[DisallowMultipleComponent]
 public class SceneLoader : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -12,8 +13,5 @@ public class SceneLoader : MonoBehaviour
     }
 
 
-    void LoadFirstScene()
-    {
-        SceneManager.LoadScene(1);
-    }
+    public void LoadFirstScene() => SceneManager.LoadScene(1);
 }

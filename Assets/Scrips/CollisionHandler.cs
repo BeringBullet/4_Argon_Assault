@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[DisallowMultipleComponent]
 public class CollisionHandler : MonoBehaviour
 {
     [Tooltip("In seconds")] [SerializeField] float levelLoadDelay = 1f;
@@ -27,14 +28,6 @@ public class CollisionHandler : MonoBehaviour
         Invoke("ReloadScene",3f);
     }
 
-    private void StartDeathSequence()
-    {
-        SendMessage("OnPlayerDeath");
-    }
-
-
-    void ReloadScene()
-    {
-        SceneManager.LoadScene(1);
-    }
+    private void StartDeathSequence() => SendMessage("OnPlayerDeath");
+    private void ReloadScene() => SceneManager.LoadScene(1);
 }
